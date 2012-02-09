@@ -7,7 +7,7 @@
 
 //--------------------------------------------------------------
 void testApp::setup(){
-	ofBackground(0,0,0);
+	
     rm.allocateForNScreens(movWidth, movHeight);
     rm.loadFromXml("fboSettings.xml");
 
@@ -16,95 +16,24 @@ void testApp::setup(){
     //guiOut  = ofRectangle(guiIn.x + guiIn.width + 30, 40 + guiIn.height + 50, 500, 178);
 	guiOut  = ofRectangle(shiftX, shiftY, movWidth, movHeight);
 	
-	index[0] = index[1] = 0;
+	index[0] = index[1] = connectTime = deltaTime = 0;
     bSelect = bPause = showString = xAdjust = yAdjust = toggleImage = maximum = moveall = false;
-	#ifdef _IMAGE_
-
-	twoScreenImage.loadImage("adam.png");
 	
+    #ifdef _IMAGE_
+    twoScreenImage.loadImage("adam.png");
 	#else
-
-	fingerMovie.loadMovie("lastday_left.avi");
-    mWidth = movWidth;
-    mHeight = movHeight;
-    
-    #endif
-
-	connectTime = 0;
-	deltaTime = 0;
-	#ifdef _TCP_
-    firstTime = 0;
-	weConnected = tcpClient.setup(SERVER, PORT);
-	tcpClient.setVerbose(true);
-    #else
+    fingerMovie.loadMovie("lastday_left.avi");
     fingerMovie.play();
     fingerMovie.setLoopState(OF_LOOP_NORMAL);
     #endif
+    
 }
 
 //--------------------------------------------------------------
 void testApp::update(){
 
 	#ifndef _IMAGE_
-
 	fingerMovie.idleMovie();
-	
-	#endif
-	
-	#ifdef _TCP_
-	
-		if(weConnected)
-		{
-		
-			if(0 == firstTime)
-            {
-                tcpClient.send("1");
-            }
-            else if(1 == firstTime && fingerMovie.getIsMovieDone())
-            {
-                tcpClient.send("1");
-                firstTime = 2;
-            }
-            
-            //if data has been sent lets update our text
-			string str = tcpClient.receive();
-			
-			if( str.length() > 0 )
-            {
-				
-				if(5 == ofToInt(str))
-                {
-                    //ofSleepMillis(50);
-                    
-                    if(0 == firstTime)
-                    {
-                        
-                        fingerMovie.play();
-                        fingerMovie.setLoopState(OF_LOOP_NONE);
-                    }
-                    else
-                        fingerMovie.firstFrame();
-                    
-                    firstTime = 1;
-                    
-                }
-                
-			}
-		}
-		else
-		{
-
-			//if we are not connected lets try and reconnect every 5 seconds
-
-            deltaTime = ofGetElapsedTimeMillis() - connectTime;
-
-			if( deltaTime > 10000 ){
-				weConnected = tcpClient.setup("127.0.0.1", 11999);
-				connectTime = ofGetElapsedTimeMillis();
-			}
-            
-		}
-    
 	#endif
 
 }
@@ -115,14 +44,10 @@ void testApp::draw(){
     rm.startOffscreenDraw();
 
     #ifdef _IMAGE_
-
     twoScreenImage.draw(shiftX, shiftY, movWidth, movHeight);
-			
 	#else
-
     ofSetColor(255, 255, 255);
-    fingerMovie.draw( shiftX, shiftY, mWidth, mHeight);
-
+    fingerMovie.draw( shiftX, shiftY, movWidth, movHeight);
     #endif
 
 	rm.endOffscreenDraw();
@@ -131,7 +56,7 @@ void testApp::draw(){
 	rm.drawOutputDiagnostically(guiOut.x, guiOut.y, guiOut.width, guiOut.height, toggleImage);
 	
 	/*
-    glPushMatrix();
+     glPushMatrix();
         
 		//glTranslatef(10, 300, 0);
 		glTranslatef(0, 0, 0);
@@ -139,16 +64,11 @@ void testApp::draw(){
 		ofSetColor(255, 255, 255, 255);
 		//rm.drawScreen();
 		
-	glPopMatrix();
+     glPopMatrix();
 	*/
 
 	if(true == showString)
 	{
-		//ofDrawBitmapString("internal texture points", 10, 228);
-		//ofDrawBitmapString("texture warping points", 535, 228);
-		//ofDrawBitmapString("screen 1", 10, 290);
-		//ofDrawBitmapString("screen 2", 710, 290);
-		
 		char tmp[16];
 		sprintf(tmp,"%d", synFrame); 
 		ofDrawBitmapString(tmp, 710, 290);

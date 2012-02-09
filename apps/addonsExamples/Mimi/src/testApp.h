@@ -13,14 +13,14 @@
 #define OF_ADDON_USING_OFXXMLSETTINGS
 
 //#define _IMAGE_ 
-//#define _TCP_
+#define _TCP_
 
 #ifdef _IMAGE_
 #define movWidth 1024
 #define movHeight 768
 #else
-#define movWidth 1680
-#define movHeight 1050
+#define movWidth 1280
+#define movHeight 960
 #endif
 
 #include "ofMain.h"
@@ -45,35 +45,21 @@ class testApp : public ofSimpleApp{
 		void mousePressed(int x, int y, int button);
 		void mouseReleased(int x, int y, int button);
 		void xxyy(int key);
+        
         renderManager rm;
 
-        ofRectangle guiIn;
-        ofRectangle guiOut;
+        ofRectangle guiIn, guiOut;
 		
-		int index[2], firstTime;
+		int index[2], firstTime, connectTime, deltaTime, synFrame;
 		
-        bool toggleImage, showString, bPause, xAdjust, yAdjust, bSelect, maximum, moveall;
+        bool toggleImage, showString, bPause, xAdjust, yAdjust, bSelect, maximum, moveall, weConnected;
         
 		#ifdef _IMAGE_
-		
 		ofImage twoScreenImage;
-		
 		#else
-		
 		ofVideoPlayer 		fingerMovie;
-		
 		#endif
 		
-		#ifdef _TCP_
-		ofxTCPClient tcpClient;
-		#endif
-	
-		int connectTime;
-		int deltaTime;
-		int synFrame;
-		int mWidth, mHeight;
-		bool weConnected;
-
 		ofxKeyMap ofkey;
 };
 
