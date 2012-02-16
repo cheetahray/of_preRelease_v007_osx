@@ -16,14 +16,14 @@
 
 #include "ofMain.h"
 #include "ofxProjectorBlend.h"
-
+#include "ofxTCPClient.h"
 //let's pretend we are blending 2 projectors 
 //side by side, set at a display resolution of 640x480
 //with a 40 pixel overlap
-#define PIXEL_OVERLAP 40
-#define PROJECTOR_COUNT 2
-#define PROJECTOR_WIDTH 640
-#define PROJECTOR_HEIGHT 480
+#define PIXEL_OVERLAP 256
+#define PROJECTOR_COUNT 1
+#define PROJECTOR_WIDTH 1280
+#define PROJECTOR_HEIGHT 960
 
 class testApp : public ofBaseApp{
 
@@ -31,7 +31,7 @@ class testApp : public ofBaseApp{
 	void setup();
 	void update();
 	void draw();
-
+    void xxyy(int key);
 	void keyPressed  (int key);
 	void keyReleased(int key);
 	void mouseMoved(int x, int y );
@@ -39,9 +39,23 @@ class testApp : public ofBaseApp{
 	void mousePressed(int x, int y, int button);
 	void mouseReleased(int x, int y, int button);
 	void windowResized(int w, int h);
-	
+	ofRectangle guiIn, guiOut;
 	ofxProjectorBlend blender;
-	
+    
+    int index[2], firstTime, connectTime, deltaTime, synFrame, movWidth, movHeight, miniSeconds,nowFrame, lastFrame;
+    
+    bool toggleImage, showString, bPause, xAdjust, yAdjust, bSelect, maximum, moveall, weConnected, iftcp;
+    
+    #ifdef _IMAGE_
+    ofImage twoScreenImage;
+    #else
+    ofVideoPlayer 		fingerMovie;
+    #endif
+    
+    ofxTCPClient tcpClient;
+    ofxXmlSettings XML;
+    
+    string Server;
 };
 
 #endif

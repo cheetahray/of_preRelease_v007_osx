@@ -20,7 +20,7 @@ int main( ){
     ofAppGlutWindow window;
 	//these variablsa re defined in testApp.h and are used to set
 	//the size of the canvas will be the resolution of two projectors side by side minus the overlap between them
-	ofSetupOpenGL(&window, PROJECTOR_WIDTH*2-PIXEL_OVERLAP, PROJECTOR_HEIGHT, OF_WINDOW);
+	ofSetupOpenGL(&window, PROJECTOR_WIDTH*2-PIXEL_OVERLAP, PROJECTOR_HEIGHT, OF_FULLSCREEN);
 	
 	// this kicks off the running of my app
 	// can be OF_WINDOW or OF_FULLSCREEN

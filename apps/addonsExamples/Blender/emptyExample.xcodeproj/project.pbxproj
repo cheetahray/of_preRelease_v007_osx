@@ -27,6 +27,23 @@
 		EE019B6714E3A3C6007E5F68 /* SmoothEdgeBlend.frag in Sources */ = {isa = PBXBuildFile; fileRef = EE019B6214E3A3C6007E5F68 /* SmoothEdgeBlend.frag */; };
 		EE019B6814E3A3C6007E5F68 /* SmoothEdgeBlend.vert in Sources */ = {isa = PBXBuildFile; fileRef = EE019B6314E3A3C6007E5F68 /* SmoothEdgeBlend.vert */; };
 		EE019B6914E3A3C6007E5F68 /* ofxProjectorBlend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE019B6514E3A3C6007E5F68 /* ofxProjectorBlend.cpp */; };
+		EEBA934C14ECAE9D00E25BE6 /* ofxTCPClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEBA934414ECAE9D00E25BE6 /* ofxTCPClient.cpp */; };
+		EEBA934D14ECAE9D00E25BE6 /* ofxTCPManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEBA934614ECAE9D00E25BE6 /* ofxTCPManager.cpp */; };
+		EEBA934E14ECAE9D00E25BE6 /* ofxTCPServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEBA934814ECAE9D00E25BE6 /* ofxTCPServer.cpp */; };
+		EEBA934F14ECAE9D00E25BE6 /* ofxUDPManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEBA934A14ECAE9D00E25BE6 /* ofxUDPManager.cpp */; };
+		EECA24E714E4B06800F89779 /* GuiContainer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EECA24AD14E4B06800F89779 /* GuiContainer.cpp */; };
+		EECA24E814E4B06800F89779 /* GuiControl.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EECA24AF14E4B06800F89779 /* GuiControl.cpp */; };
+		EECA24E914E4B06800F89779 /* GuiResources.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EECA24B214E4B06800F89779 /* GuiResources.cpp */; };
+		EECA24EA14E4B06800F89779 /* GuiTypes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EECA24B414E4B06800F89779 /* GuiTypes.cpp */; };
+		EECA24EB14E4B06800F89779 /* GuiBuilderMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EECA24B914E4B06800F89779 /* GuiBuilderMenu.cpp */; };
+		EECA24EC14E4B06800F89779 /* GuiMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EECA24BC14E4B06800F89779 /* GuiMenu.cpp */; };
+		EECA24ED14E4B06800F89779 /* ofxXmlGui.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EECA24DF14E4B06800F89779 /* ofxXmlGui.cpp */; };
+		EECA24EE14E4B06800F89779 /* ColorUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EECA24E214E4B06800F89779 /* ColorUtils.cpp */; };
+		EECA24EF14E4B06800F89779 /* StringUtils.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EECA24E514E4B06800F89779 /* StringUtils.cpp */; };
+		EECA24FA14E4B08800F89779 /* tinyxml.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EECA24F314E4B08800F89779 /* tinyxml.cpp */; };
+		EECA24FB14E4B08800F89779 /* tinyxmlerror.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EECA24F514E4B08800F89779 /* tinyxmlerror.cpp */; };
+		EECA24FC14E4B08800F89779 /* tinyxmlparser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EECA24F614E4B08800F89779 /* tinyxmlparser.cpp */; };
+		EECA24FD14E4B08800F89779 /* ofxXmlSettings.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EECA24F814E4B08800F89779 /* ofxXmlSettings.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +103,76 @@
 		EE019B6314E3A3C6007E5F68 /* SmoothEdgeBlend.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SmoothEdgeBlend.vert; sourceTree = "<group>"; };
 		EE019B6514E3A3C6007E5F68 /* ofxProjectorBlend.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxProjectorBlend.cpp; sourceTree = "<group>"; };
 		EE019B6614E3A3C6007E5F68 /* ofxProjectorBlend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxProjectorBlend.h; sourceTree = "<group>"; };
+		EEBA933F14ECAE9D00E25BE6 /* Instructions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Instructions.txt; sourceTree = "<group>"; };
+		EEBA934014ECAE9D00E25BE6 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
+		EEBA934214ECAE9D00E25BE6 /* ofxNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxNetwork.h; sourceTree = "<group>"; };
+		EEBA934314ECAE9D00E25BE6 /* ofxNetworkUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxNetworkUtils.h; sourceTree = "<group>"; };
+		EEBA934414ECAE9D00E25BE6 /* ofxTCPClient.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxTCPClient.cpp; sourceTree = "<group>"; };
+		EEBA934514ECAE9D00E25BE6 /* ofxTCPClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTCPClient.h; sourceTree = "<group>"; };
+		EEBA934614ECAE9D00E25BE6 /* ofxTCPManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxTCPManager.cpp; sourceTree = "<group>"; };
+		EEBA934714ECAE9D00E25BE6 /* ofxTCPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTCPManager.h; sourceTree = "<group>"; };
+		EEBA934814ECAE9D00E25BE6 /* ofxTCPServer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxTCPServer.cpp; sourceTree = "<group>"; };
+		EEBA934914ECAE9D00E25BE6 /* ofxTCPServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxTCPServer.h; sourceTree = "<group>"; };
+		EEBA934A14ECAE9D00E25BE6 /* ofxUDPManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxUDPManager.cpp; sourceTree = "<group>"; };
+		EEBA934B14ECAE9D00E25BE6 /* ofxUDPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxUDPManager.h; sourceTree = "<group>"; };
+		EEBA935214ECAEAE00E25BE6 /* ofxThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxThread.h; sourceTree = "<group>"; };
+		EECA24AD14E4B06800F89779 /* GuiContainer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GuiContainer.cpp; sourceTree = "<group>"; };
+		EECA24AE14E4B06800F89779 /* GuiContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiContainer.h; sourceTree = "<group>"; };
+		EECA24AF14E4B06800F89779 /* GuiControl.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GuiControl.cpp; sourceTree = "<group>"; };
+		EECA24B014E4B06800F89779 /* GuiControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiControl.h; sourceTree = "<group>"; };
+		EECA24B114E4B06800F89779 /* GuiListener.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiListener.h; sourceTree = "<group>"; };
+		EECA24B214E4B06800F89779 /* GuiResources.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GuiResources.cpp; sourceTree = "<group>"; };
+		EECA24B314E4B06800F89779 /* GuiResources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiResources.h; sourceTree = "<group>"; };
+		EECA24B414E4B06800F89779 /* GuiTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GuiTypes.cpp; sourceTree = "<group>"; };
+		EECA24B514E4B06800F89779 /* ParameterInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParameterInfo.h; sourceTree = "<group>"; };
+		EECA24B714E4B06800F89779 /* GuiBuilderHierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiBuilderHierarchy.h; sourceTree = "<group>"; };
+		EECA24B814E4B06800F89779 /* GuiBuilderInspector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiBuilderInspector.h; sourceTree = "<group>"; };
+		EECA24B914E4B06800F89779 /* GuiBuilderMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GuiBuilderMenu.cpp; sourceTree = "<group>"; };
+		EECA24BA14E4B06800F89779 /* GuiBuilderMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiBuilderMenu.h; sourceTree = "<group>"; };
+		EECA24BC14E4B06800F89779 /* GuiMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GuiMenu.cpp; sourceTree = "<group>"; };
+		EECA24BD14E4B06800F89779 /* GuiMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiMenu.h; sourceTree = "<group>"; };
+		EECA24C014E4B06800F89779 /* GuiButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiButton.h; sourceTree = "<group>"; };
+		EECA24C114E4B06800F89779 /* GuiColorPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiColorPicker.h; sourceTree = "<group>"; };
+		EECA24C214E4B06800F89779 /* GuiContour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiContour.h; sourceTree = "<group>"; };
+		EECA24C314E4B06800F89779 /* GuiDoubleField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiDoubleField.h; sourceTree = "<group>"; };
+		EECA24C414E4B06800F89779 /* GuiDrawable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiDrawable.h; sourceTree = "<group>"; };
+		EECA24C514E4B06800F89779 /* GuiFloatField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiFloatField.h; sourceTree = "<group>"; };
+		EECA24C614E4B06800F89779 /* GuiFPSCounter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiFPSCounter.h; sourceTree = "<group>"; };
+		EECA24C714E4B06800F89779 /* GuiGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiGrid.h; sourceTree = "<group>"; };
+		EECA24C814E4B06800F89779 /* GuiIntField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiIntField.h; sourceTree = "<group>"; };
+		EECA24C914E4B06800F89779 /* GuiKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiKeyboard.h; sourceTree = "<group>"; };
+		EECA24CA14E4B06800F89779 /* GuiKnob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiKnob.h; sourceTree = "<group>"; };
+		EECA24CB14E4B06800F89779 /* GuiList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiList.h; sourceTree = "<group>"; };
+		EECA24CC14E4B06800F89779 /* GuiMeter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiMeter.h; sourceTree = "<group>"; };
+		EECA24CD14E4B06800F89779 /* GuiPanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiPanner.h; sourceTree = "<group>"; };
+		EECA24CE14E4B06800F89779 /* GuiSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiSegmentedControl.h; sourceTree = "<group>"; };
+		EECA24CF14E4B06800F89779 /* GuiSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiSlider.h; sourceTree = "<group>"; };
+		EECA24D014E4B06800F89779 /* GuiSlider2D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiSlider2D.h; sourceTree = "<group>"; };
+		EECA24D114E4B06800F89779 /* GuiText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiText.h; sourceTree = "<group>"; };
+		EECA24D214E4B06800F89779 /* GuiTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiTextField.h; sourceTree = "<group>"; };
+		EECA24D314E4B06800F89779 /* GuiTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiTitle.h; sourceTree = "<group>"; };
+		EECA24D414E4B06800F89779 /* GuiToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiToggle.h; sourceTree = "<group>"; };
+		EECA24D514E4B06800F89779 /* GuiVU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiVU.h; sourceTree = "<group>"; };
+		EECA24D614E4B06800F89779 /* GuiZoomSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiZoomSlider.h; sourceTree = "<group>"; };
+		EECA24D814E4B06800F89779 /* GuiImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiImage.h; sourceTree = "<group>"; };
+		EECA24D914E4B06800F89779 /* GuiImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiImageButton.h; sourceTree = "<group>"; };
+		EECA24DA14E4B06800F89779 /* GuiImageToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiImageToggle.h; sourceTree = "<group>"; };
+		EECA24DC14E4B06800F89779 /* GuiNiceButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GuiNiceButton.h; sourceTree = "<group>"; };
+		EECA24DE14E4B06800F89779 /* PdGui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PdGui.h; sourceTree = "<group>"; };
+		EECA24DF14E4B06800F89779 /* ofxXmlGui.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxXmlGui.cpp; sourceTree = "<group>"; };
+		EECA24E014E4B06800F89779 /* ofxXmlGui.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxXmlGui.h; sourceTree = "<group>"; };
+		EECA24E214E4B06800F89779 /* ColorUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ColorUtils.cpp; sourceTree = "<group>"; };
+		EECA24E314E4B06800F89779 /* ColorUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColorUtils.h; sourceTree = "<group>"; };
+		EECA24E414E4B06800F89779 /* GridSequence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridSequence.h; sourceTree = "<group>"; };
+		EECA24E514E4B06800F89779 /* StringUtils.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StringUtils.cpp; sourceTree = "<group>"; };
+		EECA24E614E4B06800F89779 /* StringUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StringUtils.h; sourceTree = "<group>"; };
+		EECA24F114E4B08800F89779 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
+		EECA24F314E4B08800F89779 /* tinyxml.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxml.cpp; sourceTree = "<group>"; };
+		EECA24F414E4B08800F89779 /* tinyxml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = tinyxml.h; sourceTree = "<group>"; };
+		EECA24F514E4B08800F89779 /* tinyxmlerror.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlerror.cpp; sourceTree = "<group>"; };
+		EECA24F614E4B08800F89779 /* tinyxmlparser.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = tinyxmlparser.cpp; sourceTree = "<group>"; };
+		EECA24F814E4B08800F89779 /* ofxXmlSettings.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxXmlSettings.cpp; sourceTree = "<group>"; };
+		EECA24F914E4B08800F89779 /* ofxXmlSettings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxXmlSettings.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +203,10 @@
 		BB4B014C10F69532006C3DED /* addons */ = {
 			isa = PBXGroup;
 			children = (
+				EEBA935014ECAEAE00E25BE6 /* ofxThread */,
+				EEBA933D14ECAE9D00E25BE6 /* ofxNetwork */,
+				EECA24F014E4B08800F89779 /* ofxXmlSettings */,
+				EECA24AA14E4B06800F89779 /* ofxXmlGui */,
 				EE019B5F14E3A3C6007E5F68 /* ofxProjectorBlend */,
 			);
 			name = addons;
@@ -226,6 +317,228 @@
 			path = src;
 			sourceTree = "<group>";
 		};
+		EEBA933D14ECAE9D00E25BE6 /* ofxNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				EEBA933E14ECAE9D00E25BE6 /* docs */,
+				EEBA934014ECAE9D00E25BE6 /* install.xml */,
+				EEBA934114ECAE9D00E25BE6 /* src */,
+			);
+			name = ofxNetwork;
+			path = ../../../addons/ofxNetwork;
+			sourceTree = "<group>";
+		};
+		EEBA933E14ECAE9D00E25BE6 /* docs */ = {
+			isa = PBXGroup;
+			children = (
+				EEBA933F14ECAE9D00E25BE6 /* Instructions.txt */,
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
+		EEBA934114ECAE9D00E25BE6 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EEBA934214ECAE9D00E25BE6 /* ofxNetwork.h */,
+				EEBA934314ECAE9D00E25BE6 /* ofxNetworkUtils.h */,
+				EEBA934414ECAE9D00E25BE6 /* ofxTCPClient.cpp */,
+				EEBA934514ECAE9D00E25BE6 /* ofxTCPClient.h */,
+				EEBA934614ECAE9D00E25BE6 /* ofxTCPManager.cpp */,
+				EEBA934714ECAE9D00E25BE6 /* ofxTCPManager.h */,
+				EEBA934814ECAE9D00E25BE6 /* ofxTCPServer.cpp */,
+				EEBA934914ECAE9D00E25BE6 /* ofxTCPServer.h */,
+				EEBA934A14ECAE9D00E25BE6 /* ofxUDPManager.cpp */,
+				EEBA934B14ECAE9D00E25BE6 /* ofxUDPManager.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		EEBA935014ECAEAE00E25BE6 /* ofxThread */ = {
+			isa = PBXGroup;
+			children = (
+				EEBA935114ECAEAE00E25BE6 /* src */,
+			);
+			name = ofxThread;
+			path = ../../../addons/ofxThread;
+			sourceTree = "<group>";
+		};
+		EEBA935114ECAEAE00E25BE6 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EEBA935214ECAEAE00E25BE6 /* ofxThread.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		EECA24AA14E4B06800F89779 /* ofxXmlGui */ = {
+			isa = PBXGroup;
+			children = (
+				EECA24AB14E4B06800F89779 /* src */,
+			);
+			name = ofxXmlGui;
+			path = ../../../addons/ofxXmlGui;
+			sourceTree = "<group>";
+		};
+		EECA24AB14E4B06800F89779 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EECA24AC14E4B06800F89779 /* base */,
+				EECA24B614E4B06800F89779 /* builder */,
+				EECA24BB14E4B06800F89779 /* container */,
+				EECA24BE14E4B06800F89779 /* controls */,
+				EECA24DD14E4B06800F89779 /* ext */,
+				EECA24DF14E4B06800F89779 /* ofxXmlGui.cpp */,
+				EECA24E014E4B06800F89779 /* ofxXmlGui.h */,
+				EECA24E114E4B06800F89779 /* util */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		EECA24AC14E4B06800F89779 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				EECA24AD14E4B06800F89779 /* GuiContainer.cpp */,
+				EECA24AE14E4B06800F89779 /* GuiContainer.h */,
+				EECA24AF14E4B06800F89779 /* GuiControl.cpp */,
+				EECA24B014E4B06800F89779 /* GuiControl.h */,
+				EECA24B114E4B06800F89779 /* GuiListener.h */,
+				EECA24B214E4B06800F89779 /* GuiResources.cpp */,
+				EECA24B314E4B06800F89779 /* GuiResources.h */,
+				EECA24B414E4B06800F89779 /* GuiTypes.cpp */,
+				EECA24B514E4B06800F89779 /* ParameterInfo.h */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		EECA24B614E4B06800F89779 /* builder */ = {
+			isa = PBXGroup;
+			children = (
+				EECA24B714E4B06800F89779 /* GuiBuilderHierarchy.h */,
+				EECA24B814E4B06800F89779 /* GuiBuilderInspector.h */,
+				EECA24B914E4B06800F89779 /* GuiBuilderMenu.cpp */,
+				EECA24BA14E4B06800F89779 /* GuiBuilderMenu.h */,
+			);
+			path = builder;
+			sourceTree = "<group>";
+		};
+		EECA24BB14E4B06800F89779 /* container */ = {
+			isa = PBXGroup;
+			children = (
+				EECA24BC14E4B06800F89779 /* GuiMenu.cpp */,
+				EECA24BD14E4B06800F89779 /* GuiMenu.h */,
+			);
+			path = container;
+			sourceTree = "<group>";
+		};
+		EECA24BE14E4B06800F89779 /* controls */ = {
+			isa = PBXGroup;
+			children = (
+				EECA24BF14E4B06800F89779 /* basic */,
+				EECA24D714E4B06800F89779 /* image */,
+				EECA24DB14E4B06800F89779 /* nice */,
+			);
+			path = controls;
+			sourceTree = "<group>";
+		};
+		EECA24BF14E4B06800F89779 /* basic */ = {
+			isa = PBXGroup;
+			children = (
+				EECA24C014E4B06800F89779 /* GuiButton.h */,
+				EECA24C114E4B06800F89779 /* GuiColorPicker.h */,
+				EECA24C214E4B06800F89779 /* GuiContour.h */,
+				EECA24C314E4B06800F89779 /* GuiDoubleField.h */,
+				EECA24C414E4B06800F89779 /* GuiDrawable.h */,
+				EECA24C514E4B06800F89779 /* GuiFloatField.h */,
+				EECA24C614E4B06800F89779 /* GuiFPSCounter.h */,
+				EECA24C714E4B06800F89779 /* GuiGrid.h */,
+				EECA24C814E4B06800F89779 /* GuiIntField.h */,
+				EECA24C914E4B06800F89779 /* GuiKeyboard.h */,
+				EECA24CA14E4B06800F89779 /* GuiKnob.h */,
+				EECA24CB14E4B06800F89779 /* GuiList.h */,
+				EECA24CC14E4B06800F89779 /* GuiMeter.h */,
+				EECA24CD14E4B06800F89779 /* GuiPanner.h */,
+				EECA24CE14E4B06800F89779 /* GuiSegmentedControl.h */,
+				EECA24CF14E4B06800F89779 /* GuiSlider.h */,
+				EECA24D014E4B06800F89779 /* GuiSlider2D.h */,
+				EECA24D114E4B06800F89779 /* GuiText.h */,
+				EECA24D214E4B06800F89779 /* GuiTextField.h */,
+				EECA24D314E4B06800F89779 /* GuiTitle.h */,
+				EECA24D414E4B06800F89779 /* GuiToggle.h */,
+				EECA24D514E4B06800F89779 /* GuiVU.h */,
+				EECA24D614E4B06800F89779 /* GuiZoomSlider.h */,
+			);
+			path = basic;
+			sourceTree = "<group>";
+		};
+		EECA24D714E4B06800F89779 /* image */ = {
+			isa = PBXGroup;
+			children = (
+				EECA24D814E4B06800F89779 /* GuiImage.h */,
+				EECA24D914E4B06800F89779 /* GuiImageButton.h */,
+				EECA24DA14E4B06800F89779 /* GuiImageToggle.h */,
+			);
+			path = image;
+			sourceTree = "<group>";
+		};
+		EECA24DB14E4B06800F89779 /* nice */ = {
+			isa = PBXGroup;
+			children = (
+				EECA24DC14E4B06800F89779 /* GuiNiceButton.h */,
+			);
+			path = nice;
+			sourceTree = "<group>";
+		};
+		EECA24DD14E4B06800F89779 /* ext */ = {
+			isa = PBXGroup;
+			children = (
+				EECA24DE14E4B06800F89779 /* PdGui.h */,
+			);
+			path = ext;
+			sourceTree = "<group>";
+		};
+		EECA24E114E4B06800F89779 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				EECA24E214E4B06800F89779 /* ColorUtils.cpp */,
+				EECA24E314E4B06800F89779 /* ColorUtils.h */,
+				EECA24E414E4B06800F89779 /* GridSequence.h */,
+				EECA24E514E4B06800F89779 /* StringUtils.cpp */,
+				EECA24E614E4B06800F89779 /* StringUtils.h */,
+			);
+			path = util;
+			sourceTree = "<group>";
+		};
+		EECA24F014E4B08800F89779 /* ofxXmlSettings */ = {
+			isa = PBXGroup;
+			children = (
+				EECA24F114E4B08800F89779 /* install.xml */,
+				EECA24F214E4B08800F89779 /* libs */,
+				EECA24F714E4B08800F89779 /* src */,
+			);
+			name = ofxXmlSettings;
+			path = ../../../addons/ofxXmlSettings;
+			sourceTree = "<group>";
+		};
+		EECA24F214E4B08800F89779 /* libs */ = {
+			isa = PBXGroup;
+			children = (
+				EECA24F314E4B08800F89779 /* tinyxml.cpp */,
+				EECA24F414E4B08800F89779 /* tinyxml.h */,
+				EECA24F514E4B08800F89779 /* tinyxmlerror.cpp */,
+				EECA24F614E4B08800F89779 /* tinyxmlparser.cpp */,
+			);
+			path = libs;
+			sourceTree = "<group>";
+		};
+		EECA24F714E4B08800F89779 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				EECA24F814E4B08800F89779 /* ofxXmlSettings.cpp */,
+				EECA24F914E4B08800F89779 /* ofxXmlSettings.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -315,6 +628,23 @@
 				EE019B6714E3A3C6007E5F68 /* SmoothEdgeBlend.frag in Sources */,
 				EE019B6814E3A3C6007E5F68 /* SmoothEdgeBlend.vert in Sources */,
 				EE019B6914E3A3C6007E5F68 /* ofxProjectorBlend.cpp in Sources */,
+				EECA24E714E4B06800F89779 /* GuiContainer.cpp in Sources */,
+				EECA24E814E4B06800F89779 /* GuiControl.cpp in Sources */,
+				EECA24E914E4B06800F89779 /* GuiResources.cpp in Sources */,
+				EECA24EA14E4B06800F89779 /* GuiTypes.cpp in Sources */,
+				EECA24EB14E4B06800F89779 /* GuiBuilderMenu.cpp in Sources */,
+				EECA24EC14E4B06800F89779 /* GuiMenu.cpp in Sources */,
+				EECA24ED14E4B06800F89779 /* ofxXmlGui.cpp in Sources */,
+				EECA24EE14E4B06800F89779 /* ColorUtils.cpp in Sources */,
+				EECA24EF14E4B06800F89779 /* StringUtils.cpp in Sources */,
+				EECA24FA14E4B08800F89779 /* tinyxml.cpp in Sources */,
+				EECA24FB14E4B08800F89779 /* tinyxmlerror.cpp in Sources */,
+				EECA24FC14E4B08800F89779 /* tinyxmlparser.cpp in Sources */,
+				EECA24FD14E4B08800F89779 /* ofxXmlSettings.cpp in Sources */,
+				EEBA934C14ECAE9D00E25BE6 /* ofxTCPClient.cpp in Sources */,
+				EEBA934D14ECAE9D00E25BE6 /* ofxTCPManager.cpp in Sources */,
+				EEBA934E14ECAE9D00E25BE6 /* ofxTCPServer.cpp in Sources */,
+				EEBA934F14ECAE9D00E25BE6 /* ofxUDPManager.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
