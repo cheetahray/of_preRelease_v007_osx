@@ -57,7 +57,7 @@ ofxProjectorBlend::ofxProjectorBlend()
 	luminance = luminance2 = 0;
 	numProjectors = 0;
 	threshold = 0;
-	shaderLocation = "../../../../../addons/ofxProjectorBlend/assets/SmoothEdgeBlend";
+	shaderLocation = "../../../../../addons/rayProjectorBlend/assets/SmoothEdgeBlend";
     grid = new ofPoint[GRID_X * GRID_Y];
 	coor = new ofPoint[GRID_X * GRID_Y];
     bInputSelected = false;
