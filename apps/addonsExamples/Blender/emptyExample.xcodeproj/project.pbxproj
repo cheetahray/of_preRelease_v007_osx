@@ -26,7 +26,7 @@
 		E4EB6799138ADC1D00A09F29 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBAB23BE13894E4700AA2426 /* GLUT.framework */; };
 		EE019B6714E3A3C6007E5F68 /* SmoothEdgeBlend.frag in Sources */ = {isa = PBXBuildFile; fileRef = EE019B6214E3A3C6007E5F68 /* SmoothEdgeBlend.frag */; };
 		EE019B6814E3A3C6007E5F68 /* SmoothEdgeBlend.vert in Sources */ = {isa = PBXBuildFile; fileRef = EE019B6314E3A3C6007E5F68 /* SmoothEdgeBlend.vert */; };
-		EE019B6914E3A3C6007E5F68 /* ofxProjectorBlend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE019B6514E3A3C6007E5F68 /* ofxProjectorBlend.cpp */; };
+		EE414B2E14ECEB5E000613A0 /* rayProjectorBlend.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EE414B2C14ECEB5E000613A0 /* rayProjectorBlend.cpp */; };
 		EEBA934C14ECAE9D00E25BE6 /* ofxTCPClient.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEBA934414ECAE9D00E25BE6 /* ofxTCPClient.cpp */; };
 		EEBA934D14ECAE9D00E25BE6 /* ofxTCPManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEBA934614ECAE9D00E25BE6 /* ofxTCPManager.cpp */; };
 		EEBA934E14ECAE9D00E25BE6 /* ofxTCPServer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = EEBA934814ECAE9D00E25BE6 /* ofxTCPServer.cpp */; };
@@ -101,8 +101,8 @@
 		EE019B6014E3A3C6007E5F68 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		EE019B6214E3A3C6007E5F68 /* SmoothEdgeBlend.frag */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SmoothEdgeBlend.frag; sourceTree = "<group>"; };
 		EE019B6314E3A3C6007E5F68 /* SmoothEdgeBlend.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = SmoothEdgeBlend.vert; sourceTree = "<group>"; };
-		EE019B6514E3A3C6007E5F68 /* ofxProjectorBlend.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofxProjectorBlend.cpp; sourceTree = "<group>"; };
-		EE019B6614E3A3C6007E5F68 /* ofxProjectorBlend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxProjectorBlend.h; sourceTree = "<group>"; };
+		EE414B2C14ECEB5E000613A0 /* rayProjectorBlend.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = rayProjectorBlend.cpp; sourceTree = "<group>"; };
+		EE414B2D14ECEB5E000613A0 /* rayProjectorBlend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = rayProjectorBlend.h; sourceTree = "<group>"; };
 		EEBA933F14ECAE9D00E25BE6 /* Instructions.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Instructions.txt; sourceTree = "<group>"; };
 		EEBA934014ECAE9D00E25BE6 /* install.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = install.xml; sourceTree = "<group>"; };
 		EEBA934214ECAE9D00E25BE6 /* ofxNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofxNetwork.h; sourceTree = "<group>"; };
@@ -311,8 +311,8 @@
 		EE019B6414E3A3C6007E5F68 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				EE019B6514E3A3C6007E5F68 /* ofxProjectorBlend.cpp */,
-				EE019B6614E3A3C6007E5F68 /* ofxProjectorBlend.h */,
+				EE414B2C14ECEB5E000613A0 /* rayProjectorBlend.cpp */,
+				EE414B2D14ECEB5E000613A0 /* rayProjectorBlend.h */,
 			);
 			path = src;
 			sourceTree = "<group>";
@@ -627,7 +627,6 @@
 				E4B69E210A3A1BDC003C02F2 /* testApp.cpp in Sources */,
 				EE019B6714E3A3C6007E5F68 /* SmoothEdgeBlend.frag in Sources */,
 				EE019B6814E3A3C6007E5F68 /* SmoothEdgeBlend.vert in Sources */,
-				EE019B6914E3A3C6007E5F68 /* ofxProjectorBlend.cpp in Sources */,
 				EECA24E714E4B06800F89779 /* GuiContainer.cpp in Sources */,
 				EECA24E814E4B06800F89779 /* GuiControl.cpp in Sources */,
 				EECA24E914E4B06800F89779 /* GuiResources.cpp in Sources */,
@@ -645,6 +644,7 @@
 				EEBA934D14ECAE9D00E25BE6 /* ofxTCPManager.cpp in Sources */,
 				EEBA934E14ECAE9D00E25BE6 /* ofxTCPServer.cpp in Sources */,
 				EEBA934F14ECAE9D00E25BE6 /* ofxUDPManager.cpp in Sources */,
+				EE414B2E14ECEB5E000613A0 /* rayProjectorBlend.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

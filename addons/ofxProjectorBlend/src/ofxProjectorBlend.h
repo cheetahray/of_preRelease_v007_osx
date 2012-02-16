@@ -57,18 +57,12 @@
 #include "ofxSimpleGuiToo.h"
 #endif
 
-#define pointNum 4
-#define GRID_X 12
-#define GRID_Y 8
-#define divideH 7
-#define divideV 10
-#define CLICKRADIUS 5
-
+/*
 #define USE_XML_GUI
 
 #ifdef USE_XML_GUI
 #include "ofxXmlGui.h"
-#endif
+#endif*/
 
 
 enum ofxProjectorBlendLayout {
@@ -86,7 +80,7 @@ class ofxProjectorBlend
 {
   public:
 	ofxProjectorBlend();
-	~ofxProjectorBlend();
+	
 	
 	/**
 	 * Set resolutionWidth and height to the resolutions of each projector output - if you're portrait, 
@@ -117,9 +111,7 @@ class ofxProjectorBlend
 	ofFbo & getFullTexture() { return fullTexture; }
 
 	string setShaderLocation(string shaderLocation);
-	void setPoint(int which, float x, float y);
-    void setPoints(ofPoint pts[pointNum]);
-    void setPoints(ofPoint inputPts[pointNum], ofPoint outputPts[pointNum]);
+	
 	
 	/** 
 	 * This is how big all the projector resolutions would be
@@ -136,7 +128,7 @@ class ofxProjectorBlend
 	float getDisplayHeight();
 	
 	void moveDisplayVertical(unsigned int targetDisplay, int yOffset);
-	void drawOutputDiagnostically(float x, float y, float w, float h, bool toggleImage); // can't specify abs dimensions, since might be diff apsect ratio...
+	
 	
 	/** This changes your app's window size to the correct output size */
 	void setWindowToDisplaySize();
@@ -153,28 +145,15 @@ class ofxProjectorBlend
 	float gamma2;
 	float luminance2;
 	float threshold;
-	float screenWidth, screenHeight;
+	
 #ifdef USE_SIMPLE_GUI
 	void addGuiPage();
 #endif
-	void drawScreen(int nScreen);
+	
 #ifdef USE_XML_GUI
 	ofxXmlGui *getGui();
 	ofxXmlGui *gui;
 #endif
-    bool mouseSelectOutputPoint(ofRectangle drawRect, ofPoint mousePoint, float clickRadius = CLICKRADIUS * 2);
-    bool mouseDragOutputPoint(ofRectangle drawRect, ofPoint mousePoint, bool xAdjust, bool yAdjust, bool maximum, bool isAlt, bool moveall);
-    bool keyPressOutputPoint(int key, bool xAdjust, bool yAdjust, bool maximum, bool isAlt, bool moveall);
-    void checkitout(int diffX, int diffY, bool xAdjust, bool yAdjust, bool maximum, bool isAlt, bool moveall);
-    int    activeScreenIn, activePointIn, activeScreenOut, activePointOut, nScreens;
-    bool bInputSelected;
-    string xmlFile;
-    void resetCoordinates();
-    void reloadFromXml();
-    void loadFromXml(string xmlFileName);
-    void saveToXml();
-    void saveToXml(string xmlFileName);
-    void singlePoint(int myPoint, int youScreen);
 protected:
 	
 	vector<int> projectorHeightOffset;
@@ -195,17 +174,7 @@ protected:
 	ofShader blendShader;
 	ofFbo fullTexture;
 	void updateShaderUniforms();
-    
-    void updatePoints();
-    
-    ofPoint quad[pointNum];
-    ofPoint utQuad[pointNum];
-    ofPoint * grid;
-    ofPoint * coor;
-    
-    ofPoint ** outputPositions;
-    ofPoint ** inputPositions;
-    ofxXmlSettings xml;
+
 };
 
 #endif

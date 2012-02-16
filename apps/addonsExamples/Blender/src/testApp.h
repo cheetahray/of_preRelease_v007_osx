@@ -15,8 +15,9 @@
  */
 
 #include "ofMain.h"
-#include "ofxProjectorBlend.h"
+#include "rayProjectorBlend.h"
 #include "ofxTCPClient.h"
+#include "ofxXmlSettings.h"
 //let's pretend we are blending 2 projectors 
 //side by side, set at a display resolution of 640x480
 //with a 40 pixel overlap

@@ -42,7 +42,7 @@
  *
  */
 
-#include "ofxProjectorBlend.h"
+#include "rayProjectorBlend.h"
 #define keyShift 1
 int lastX, lastY;
 
