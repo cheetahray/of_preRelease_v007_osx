@@ -1,0 +1,51 @@
+body {
+	width: 900px;
+	padding: 10px;
+	margin: 0px auto 0px auto;
+	border-top: solid 10px black;
+	border-left: solid 1px dimgrey;
+	border-right: solid 1px dimgrey;
+}
+
+video {
+	margin: 0 30px 0 30px;
+	padding: 0;
+}
+
+p {
+	margin-top: 0;
+}
+
+h1 {
+	font-size: 1.2em;
+}
+
+h2 {
+	font-size: 1.0em;
+	margin-bottom: 3px;
+}
+
+h3 {
+	font-size: 1.0em;
+	border-bottom: 1px dashed dimgrey;
+	margin-bottom: 3px;
+}
+
+ul {
+	margin: 0;
+}
+
+pre.source {
+	max-height: 200px;
+	overflow: auto;
+	padding: 5px;
+	border: 1px dimgrey solid;
+	margin: 10px 30px 10px 30px;
+}
+
+.footer {
+	border-top: 1px dashed dimgrey;
+	margin-top: 40px;
+	font-size: 0.8em;
+	text-align: center;
+}
