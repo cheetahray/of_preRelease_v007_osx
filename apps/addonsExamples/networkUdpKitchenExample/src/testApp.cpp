@@ -11,12 +11,8 @@ void testApp::setup(){
 	udpConnection.Bind(12345);
     udpConnection.Connect("192.168.2.67",12344);
 	udpConnection.SetNonBlocking(true);
-    ofSleepMillis(1000);
-    udpConnection.Send("Hello",strlen("Hello"));
-    ofSleepMillis(1000);
-    udpConnection.Send("Hello",strlen("Hello"));
-    ofSleepMillis(1000);
-	ofSetBackgroundAuto(false);
+    
+    ofSetBackgroundAuto(false);
 	ofBackground(255, 255, 255);
 }
 
@@ -25,7 +21,10 @@ void testApp::update(){
 
 	char udpMessage[32];
 	udpConnection.Receive(udpMessage,32);
-	/*string*/message=udpMessage;
+    if(udpMessage[0] != 0)
+    {
+        /*string*/message=udpMessage;
+    }
     /*
 	if(message!=""){
 		stroke.clear();
@@ -58,7 +57,7 @@ void testApp::draw(){
 
 //--------------------------------------------------------------
 void testApp::keyPressed(int key){
-
+    udpConnection.Send("Hello",strlen("Hello"));
 }
 
 //--------------------------------------------------------------
