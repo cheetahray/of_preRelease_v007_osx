@@ -27,6 +27,8 @@ void testApp::httpPost(string url, char *data, int dataLength) {
 		{
 			colorString = colorString.substr(0,found);
 		}
+		httpResponse(data);
+		//httpResponse(colorString);
 	}
 }
 
