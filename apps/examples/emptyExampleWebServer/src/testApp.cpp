@@ -21,7 +21,12 @@ void testApp::httpPost(string url, char *data, int dataLength) {
 		ofStringReplace(colorString, "%20", " %");
 		result = ofSplitString(colorString,"%");
 		result.erase (result.begin()+(result.size()-1));
-		result.erase (result.begin()+(result.size()-1));
+		ofStringReplace(colorString, "%", "\n");
+		size_t found = colorString.find_last_of(" ");
+		if (found!=string::npos)
+		{
+			colorString = colorString.substr(0,found);
+		}
 	}
 }
 
@@ -43,12 +48,6 @@ void testApp::update(){
 				ofSleepMillis(raydelay + (raylen << 1) );
 			}
 			result.clear();
-			ofStringReplace(colorString, "%", "\n");
-			size_t found = colorString.find_first_of("3B");
-			if (found!=string::npos)
-			{
-				colorString = colorString.substr(0,found);
-			}
 			serial.close();
 		}
 	}
@@ -56,7 +55,7 @@ void testApp::update(){
 
 //--------------------------------------------------------------
 void testApp::draw(){
-	verdana30.drawString(colorString, 30, 30 );
+	verdana30.drawString("??", 30, 30 );
 }
 
 //--------------------------------------------------------------
