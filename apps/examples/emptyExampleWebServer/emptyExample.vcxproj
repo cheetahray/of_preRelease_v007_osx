@@ -76,9 +76,7 @@
     <PostBuildEvent>
       <Message>adding DLLs and creating data folder</Message>
       <Command>xcopy /e /i /y "$(ProjectDir)..\..\..\export\vs2010\*.dll" "$(ProjectDir)bin"
-	  if not exist "$(ProjectDir)bin\data" mkdir  "$(ProjectDir)bin\data"
-	  xcopy /e /i /y "$(ProjectDir)..\..\..\addons\ofxSnorkel\lib\win\*.dll" "$(ProjectDir)bin"
-</Command>
+	  if not exist "$(ProjectDir)bin\data" mkdir  "$(ProjectDir)bin\data"</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">

@@ -36,7 +36,7 @@ void testApp::httpPost(string url, char *data, int dataLength) {
 void testApp::update(){
 	if(result.empty() == false)
 	{
-		if(serial.setup("\\\\.\\COM17",9600))
+		if(serial.setup("\\\\.\\COM12",9600))
 		{
 			vector<string>::iterator it;
 			string delayy = result.front();
