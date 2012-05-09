@@ -26,6 +26,9 @@ public:
 	vector<string> result;
 	ofSerial	serial;
 	ofTrueTypeFont	verdana30;
+	time_t rawtime;
+	struct tm * timeinfo;
+	char timebuffer [3][4];
 };
 
 #endif
