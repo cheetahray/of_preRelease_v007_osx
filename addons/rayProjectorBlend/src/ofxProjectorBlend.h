@@ -60,16 +60,17 @@
 #define pointNum 4
 #define GRID_X 12
 #define GRID_Y 8
-#define divideH 7
-#define divideV 10
+#define divideH 1
+#define divideV 1
 #define CLICKRADIUS 5
-
+#ifndef WIN32
 #define USE_XML_GUI
-
+#endif
 #ifdef USE_XML_GUI
 #include "ofxXmlGui.h"
+#else
+#include "ofxXmlSettings.h"
 #endif
-
 
 enum ofxProjectorBlendLayout {
 	ofxProjectorBlend_Horizontal,
@@ -116,7 +117,7 @@ class ofxProjectorBlend
 
 	ofFbo & getFullTexture() { return fullTexture; }
 
-	string setShaderLocation(string shaderLocation);
+	void setShaderLocation(string shaderLocation);
 	void setPoint(int which, float x, float y);
     void setPoints(ofPoint pts[pointNum]);
     void setPoints(ofPoint inputPts[pointNum], ofPoint outputPts[pointNum]);

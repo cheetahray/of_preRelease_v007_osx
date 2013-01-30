@@ -78,7 +78,7 @@ ofxProjectorBlend::~ofxProjectorBlend()
 	delete coor;
 }
 
-string ofxProjectorBlend::setShaderLocation(string _shaderLocation){
+void ofxProjectorBlend::setShaderLocation(string _shaderLocation){
 	shaderLocation = _shaderLocation;
 	blendShader.load(shaderLocation);
 }

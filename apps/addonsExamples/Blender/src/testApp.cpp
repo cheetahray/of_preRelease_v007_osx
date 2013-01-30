@@ -101,9 +101,9 @@ void testApp::update()
                 }
             }
             
-            char str[4];
+            char str[2];
             
-			if( udpConnection.Receive(str, 4) > 0 )
+			if( udpConnection.Receive(str, 2) > 0 )
             {
 				
 				if(5 == ofToInt(str))
