@@ -73,6 +73,7 @@ void testApp::setup()
         fingerMovie.setLoopState(OF_LOOP_NORMAL);
     }
     #endif
+	ofHideCursor();
 }
 
 //--------------------------------------------------------------
